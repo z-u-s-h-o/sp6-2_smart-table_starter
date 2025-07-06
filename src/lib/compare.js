@@ -58,6 +58,7 @@ const rules = {
     // Подробнее: это позволяет проверить, попадает ли число
     // в заданный диапазон. Например, [10, 20] означает от 10 до 20 включительно
     arrayAsRange: () => (key, sourceValue, targetValue) => {
+        //я массив
         if (Array.isArray(targetValue)) {
             if (targetValue.length === 2) {
                 const [from, to] = targetValue;
